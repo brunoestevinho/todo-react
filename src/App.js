@@ -11,6 +11,7 @@ function App() {
   const [status, setStatus] = useState("all");
   const [filteredTodos, setfilteredTodos] = useState([]);
 
+
   //runs once
   useEffect( () => {
     getLocalTodos()
@@ -51,9 +52,7 @@ function App() {
 
   return (
     <div className="App">
-      <header>
-        <h1>Take note !</h1>
-      </header>
+      
       <Form 
         inputText={inputText} 
         todos={todos} 
@@ -62,6 +61,7 @@ function App() {
         setStatus={setStatus}
       />
       <TodoList filteredTodos={filteredTodos} setTodos={setTodos} todos={todos}/>
+
     </div>
   );
 }
