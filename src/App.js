@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
 
-import Form from "./components/Form";
+import InputForm from "./components/InputForm";
 import TodoList from "./components/TodoList";
 
 function App() {
@@ -53,7 +53,7 @@ function App() {
   return (
     <div className="App">
       
-      <Form 
+      <InputForm 
         inputText={inputText} 
         todos={todos} 
         setTodos={setTodos} 

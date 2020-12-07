@@ -1,6 +1,7 @@
 import React from "react";
+import { Form } from 'react-bootstrap';
 
-const Form = ({inputText, setInputText, todos, setTodos, setStatus}) => {
+const InputForm = ({inputText, setInputText, todos, setTodos, setStatus}) => {
 
     const inputTextHandler = (e) => {
         setInputText(e.target.value);
@@ -18,7 +19,7 @@ const Form = ({inputText, setInputText, todos, setTodos, setStatus}) => {
     }
 
     return(
-        <form>
+        <Form>
             <input value={inputText} onChange = {inputTextHandler} type="text" className="todo-input" />
             <button onClick={submitTodoHandler} className="todo-button" type="submit">
                 <i className = "fas fa-plus-square"></i>
@@ -30,8 +31,8 @@ const Form = ({inputText, setInputText, todos, setTodos, setStatus}) => {
                     <option value="uncompleted">Uncompleted</option>
                 </select>
             </div>
-        </form>
+        </Form>
     );
 }
 
-export default Form;
+export default InputForm;
