@@ -8,9 +8,12 @@ const LoginButton = () => {
 
     if (isLoading) {
         return (
-            <Spinner animation="border" variant="light" role="status">
-                <span className="sr-only">Loading...</span>
-            </Spinner>
+            <Row  className="justify-content-center">
+                <Spinner animation="border" variant="light" role="status">
+                    <span className="sr-only">Loading...</span>
+                </Spinner>
+            </Row>
+            
         )
     }
 

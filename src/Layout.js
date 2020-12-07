@@ -4,7 +4,6 @@ import App from './App';
 import { useAuth0 } from '@auth0/auth0-react'
 import LoginButton from './components/LoginButton';
 import { Container, Row, Col } from 'react-bootstrap';
-import userEvent from '@testing-library/user-event';
 
 const Layout = () => {
     
@@ -19,7 +18,9 @@ const Layout = () => {
                     </Col>
                 </Row>
                 <Row className="justify-content-center greet"> 
+                    {isAuthenticated && (
                     <h1>Hey {user.name}, good to see you!</h1>
+                    )}
                 </Row>
                 <Row>
                     <Col>

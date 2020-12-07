@@ -8,8 +8,7 @@ import LogoutButton from "./LogoutButton";
 
 const Header = () => {
   
-  const { user } = useAuth0();
-  console.log({user})
+  const { user, isAuthenticated } = useAuth0();
   return(
     <>
       <Navbar bg="dark" variant="dark">
@@ -17,7 +16,7 @@ const Header = () => {
         <Navbar.Toggle />
         <Navbar.Collapse className="justify-content-end">
         <Navbar.Brand>
-          <img className="avatar" src={user.picture} alt="Avatar"/>
+        {isAuthenticated && (<img className="avatar" src={user.picture} alt="Avatar"/>)}
         </Navbar.Brand>    
         </Navbar.Collapse>
         <LogoutButton />

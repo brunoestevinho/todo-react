@@ -139,6 +139,11 @@ h4 {
   color: white;
 }
 
+h1 {
+  margin: 1rem;
+  text-align: center;
+}
+
 .avatar {
   border-radius: 50%;
   width: 3rem;
