@@ -64,7 +64,7 @@ form button:hover {
 
 .trash-btn,
 .complete-btn {
-  background: #505050;
+  background: #b13d3d;
   color: white;
   border: none;
   padding: 1rem;
@@ -115,7 +115,7 @@ select {
   color: #343a40;
   font-family: "Poppins", sans-serif;
   cursor: pointer;
-  width: 12rem;
+  width: 9rem;
 }
 /* Arrow */
 .select::after {
@@ -146,5 +146,9 @@ h1 {
 
 .avatar {
   border-radius: 50%;
-  width: 3rem;
+  width: 2.5rem;
+}
+
+.userName {
+  color: rgb(220, 255, 199);
 }

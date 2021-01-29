@@ -1,9 +1,9 @@
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import {Auth0Provider} from '@auth0/auth0-react';
-import Layout from './Layout';
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import { Auth0Provider } from "@auth0/auth0-react";
+import Layout from "./Layout";
 
 const domain = process.env.REACT_APP_AUTH0_DOMAIN;
 const clientId = process.env.REACT_APP_AUTH0_CLIENT_ID;
@@ -13,7 +13,8 @@ ReactDOM.render(
     domain={domain}
     clientId={clientId}
     redirectUri={window.location.origin}
-  >    <Layout />
+  >
+    <Layout />
   </Auth0Provider>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
