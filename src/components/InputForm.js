@@ -1,5 +1,5 @@
 import React from "react";
-import { Form } from "react-bootstrap";
+import { Form, Row, Col } from "react-bootstrap";
 
 const InputForm = ({ inputText, setInputText, todos, setTodos, setStatus }) => {
   const inputTextHandler = (e) => {
