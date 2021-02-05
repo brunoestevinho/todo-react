@@ -7,7 +7,7 @@ import TodoList from "./components/TodoList";
 function App() {
   const [inputText, setInputText] = useState("");
   const [todos, setTodos] = useState([]);
-  const [status, setStatus] = useState("all");
+  const [status, setStatus] = useState("uncompleted");
   const [filteredTodos, setfilteredTodos] = useState([]);
 
   //runs once

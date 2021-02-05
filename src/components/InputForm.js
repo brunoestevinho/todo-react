@@ -22,6 +22,7 @@ const InputForm = ({ inputText, setInputText, todos, setTodos, setStatus }) => {
   return (
     <Form>
       <input
+        placeholder="Write something"
         value={inputText}
         onChange={inputTextHandler}
         type="text"
@@ -33,9 +34,9 @@ const InputForm = ({ inputText, setInputText, todos, setTodos, setStatus }) => {
       </button>
       <div className="select">
         <select onChange={statusHandler} name="todos" className="filter-todo">
-          <option value="all">All</option>
-          <option value="completed">Completed</option>
           <option value="uncompleted">Uncompleted</option>
+          <option value="completed">Completed</option>
+          <option value="all">All</option>
         </select>
       </div>
     </Form>
