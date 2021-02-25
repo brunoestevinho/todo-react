@@ -1,9 +1,8 @@
-# 2Do
-![2Do_Logo](https://imgur.com/PAISndg.png)
+# ![2Do_Logo](https://imgur.com/PAISndg.png)
 
 To-Do app created with react and using Auth0 authentication for demo purposes
 
-![2Do](src/images/personal-webpage.png?raw=true "Personal Website")
+![2Do](https://i.imgur.com/bRcvhNP.png)
 
 ## Installing
 
@@ -22,3 +21,4 @@ To-Do app created with react and using Auth0 authentication for demo purposes
 ## Built With
 
 * [React]
+* [Auth0]
