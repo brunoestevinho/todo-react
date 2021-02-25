@@ -1,4 +1,6 @@
-# ![2Do_Logo](https://imgur.com/PAISndg.png)
+<p align="center">
+  <img src="https://imgur.com/PAISndg.png">
+</p>
 
 To-Do app created with react and using Auth0 authentication for demo purposes
 
