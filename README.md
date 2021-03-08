@@ -14,11 +14,19 @@ To-Do app created with react and using Auth0 authentication for demo purposes
    npm install 
    ```
 
-2. Start the development server
+2. Create a .env file with the credentials from Auth0
+ 
+   ```sh
+   REACT_APP_AUTH0_DOMAIN = XXXXXXXXX
+   REACT_APP_AUTH0_CLIENT_ID = XXXXXXXXXXXXXX
+   ```
+
+3. Start the development server
 
    ```sh
    npm start
    ```
+   
 
 ## Built With
 
